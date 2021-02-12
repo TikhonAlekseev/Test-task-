@@ -1,0 +1,74 @@
+@import './header';
+@import './footer';
+@import './content';
+@import './loader-animate';
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+$btnBack : #403432;
+$btnBackHov:#776763;
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo__img{
+    display: block;
+    height: 48px;
+    width: 48px;
+    background-color: saddlebrown;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    width: 519px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 615px;
+}
+.seacrh{
+    font-size: 0px;
+}
+.link{
+    color: #343030;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    padding-bottom: 10px;
+    &:hover{
+        border-bottom: 1px solid #343030;
+    }
+}
+.btn{
+    font-family: 'Merriweather', serif;
+    padding: 15px 36px;
+    background: $btnBack;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    font-weight: 700;
+    position: relative;
+    &:hover{
+        cursor: pointer;
+        background: $btnBackHov;
+        transition: 0.5 all ease-in;
+    }
+}
+.btn_active{
+    background-color: #5B3A32;
+}
+.disabled{
+    opacity: 0.5;
+}
